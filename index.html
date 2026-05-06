@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công ty Quảng Cáo & In Sáng Tạo - IST</title>
+    <!-- Nhúng thư viện Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* === KHU VỰC CÀI ĐẶT MÀU SẮC THƯƠNG HIỆU === */
+        :root {
+            --mau-chu-dao: #0B5ED7; /* Thay mã màu chính của logo IST vào đây */
+            --mau-diem-nhan: #FF9900; /* Thay mã màu phụ (dùng cho nút bấm, hover) vào đây */
+            --mau-chu-menu: #FFFFFF; /* Màu chữ trên thanh menu */
+        }
+
+        body { font-family: Arial, sans-serif; }
+        
+        /* Tùy chỉnh thanh Menu */
+        .navbar-custom {
+            background-color: var(--mau-chu-dao);
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: var(--mau-chu-menu) !important;
+            font-weight: 500;
+        }
+
+        /* Tùy chỉnh Nút bấm */
+        .btn-custom {
+            background-color: var(--mau-diem-nhan);
+            color: #fff;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #e68a00; /* Màu tối hơn một chút khi rê chuột vào */
+            color: #fff;
+        }
+        
+        .btn-outline-custom {
+            color: var(--mau-chu-dao);
+            border-color: var(--mau-chu-dao);
+        }
+        .btn-outline-custom:hover {
+            background-color: var(--mau-chu-dao);
+            color: #fff;
+        }
+
+        /* Tùy chỉnh phần Hero Section */
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--mau-diem-nhan); /* Đường viền màu nhấn dưới banner */
+        }
+
+        /* Tùy chỉnh Card Dịch vụ */
+        .service-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-color: var(--mau-chu-dao);
+        }
+
+        /* Tùy chỉnh Chân trang */
+        .footer-custom {
+            background-color: var(--mau-chu-dao);
+            color: var(--mau-chu-menu);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thanh điều hướng (Menu) -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">IN SÁNG TẠO</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#dich-vu">Dịch Vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#du-an">Dự Án</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lien-he">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Phần Banner giới thiệu -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold" style="color: var(--mau-chu-dao);">Tư vấn tận tình - Thiết kế tận tâm</h1>
+            <p class="lead">Thi công tử tế - Chi phí tối ưu. Chúng tôi mang đến giải pháp quảng cáo toàn diện.</p>
+            <a href="#lien-he" class="btn btn-custom btn-lg mt-3">Nhận Báo Giá Ngay</a>
+        </div>
+    </section>
+
+    <!-- Phần Dịch vụ chính -->
+    <section id="dich-vu" class="container my-5">
+        <h2 class="text-center mb-5" style="color: var(--mau-chu-dao); font-weight: bold;">Dịch Vụ Cốt Lõi</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <h4>Thiết Kế & In Ấn</h4>
+                    <p>Card visit, catalogue, bao bì, ấn phẩm văn phòng với hệ thống quản lý màu sắc chuẩn xác.</p>
+                    <a href="landing-pages/in-an.html" class="btn btn-outline-custom mt-2">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <h4>Bảng Hiệu Quảng Cáo</h4>
+                    <p>Khảo sát, dựng mô hình 3D ánh sáng và thi công lắp đặt trọn gói các loại bảng hiệu.</p>
+                    <a href="landing-pages/bang-hieu.html" class="btn btn-outline-custom mt-2">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="service-card">
+                    <h4>Cung Cấp Vật Tư</h4>
+                    <p>Phân phối vật tư in ấn, văn phòng phẩm thiết yếu cho doanh nghiệp và cơ quan.</p>
+                    <a href="landing-pages/vat-tu.html" class="btn btn-outline-custom mt-2">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chân trang -->
+    <footer id="lien-he" class="footer-custom text-center py-4 mt-5">
+        <div class="container">
+            <h5 class="fw-bold mb-3">Công ty TNHH MTV Quảng Cáo In Sáng Tạo</h5>
+            <p class="mb-1">Hotline: [Số điện thoại của bạn]</p>
+            <p class="mb-0">Email: [Email của bạn]</p>
+        </div>
+    </footer>
+
+</body>
+</html>
